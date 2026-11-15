@@ -18,6 +18,8 @@ Pythonilla ja Flaskilla toteutettu verkkosovellus.
 ## Osoite
 http://193.166.24.23/viikko2/
 
+-------------------------------------------------------------
+
 #Viikko 3 - Linux palvelinraportti
 
 ## Ominaisuudet
