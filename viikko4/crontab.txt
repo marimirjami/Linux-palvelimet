@@ -1,0 +1,2 @@
+# Hourly website backup on server B
+0 * * * * /home/ubuntu/backup-www.sh

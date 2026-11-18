@@ -1,0 +1,10 @@
+# Esimerkki  MariaDB replication configuration
+# Server A
+[mysqld]
+server-id = 1
+log_bin = /var/log/mysql/mysql-bin.log
+bind-address = 0.0.0.0
+
+# Server B käyttää server-id = 2
+# Replication source: 192.168.1.112
+
