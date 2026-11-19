@@ -34,5 +34,6 @@ Varmuuskopioinnin onnistumiset kirjataan lokitiedostoon.
 ~ Varmuuskopiointi toimii automaattisesti.
 
 ~ Varmuuskopion palautusta testattiin erillisessä hakemistossa.
+
 ~ Palveluiden toiminta tarkistettiin uudelleenkäynnistyksen jälkee
 
