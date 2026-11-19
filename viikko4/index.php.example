@@ -2,7 +2,7 @@
 $host = "localhost";
 $db = "viikko2";
 $user = "viikko4_reader";
-$password = getenv("DB_PASSWORD");
+$password = getenv("DB_PASSWORD"); << ## muokattu salasana ##
 
 if (!$password) {
     die("Tietokannan salasana puuttuu.");
