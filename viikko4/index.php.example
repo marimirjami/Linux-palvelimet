@@ -1,0 +1,78 @@
+<?php
+$host = "localhost";
+$db = "viikko2";
+$user = "viikko4_reader";
+$password = getenv("DB_PASSWORD");
+
+if (!$password) {
+    die("Tietokannan salasana puuttuu.");
+}
+
+try {
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$db;charset=utf8mb4",
+        $user,
+        $password
+    );
+
+    $stmt = $pdo->query("SELECT count FROM visits WHERE id = 1");
+    $count = $stmt->fetchColumn();
+
+} catch (PDOException $e) {
+    die("Tietokantayhteys epäonnistui.");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viikko 4 - Replikointi</title>
+
+    <style>
+        body {
+            background-color: #dceddc;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+        }
+
+        h1, h2 {
+            color: #287a3d;
+        }
+
+        a {
+            color: #287a3d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Viikko 4 – MariaDB-replikointi</h1>
+
+    <h2>Kävijälaskuri: <?php echo htmlspecialchars($count); ?></h2>
+
+    <p>Tämä sivu lukee tiedot B-palvelimen paikallisesta MariaDB-tietokannasta.</p>
+
+    <p>Tietokanta on replikoitu A-palvelimelta.</p>
+
+    <p>Tämä sivu on vain luku -tilassa eikä muuta laskurin arvoa.</p>
+
+    <h3>Palvelinten sivut</h3>
+    <ul>
+        <li><a href="http://193.166.24.23/viikko2/">A-palvelin – Viikko 2</a></li>
+        <li><a href="http://195.148.20.62/viikko4/">B-palvelin – Viikko 4</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
