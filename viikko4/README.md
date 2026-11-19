@@ -2,8 +2,10 @@
 
 ## Palvelimet ##
 
-~ Palvelin A: 193.166.24.23
-~ Palvelin B: 195.148.20.62
+~ Palvelin A: 193.166.24.23 (Master)
+A: http://193.166.24.23/viikko2/
+~ Palvelin B: 195.148.20.62 (Replica)
+B: http://195.148.20.62/viikko4/
 
 ## Tietokantareplikointi ##
 
@@ -17,7 +19,8 @@ Palvelimella B on Bash-skripti, joka varmuuskopioi verkkosivuston tunnin välein
 
 Varmuuskopiot tallennetaan hakemistoon:
 
-/srv/backups/www/
+Lokitiedosto on tää:
+/srv/backups/www/backup.log
 
 Varmuuskopioinnin onnistumiset kirjataan lokitiedostoon.
 
