@@ -4,6 +4,7 @@
 
 ~ Palvelin A: 193.166.24.23 (Master)
 A: http://193.166.24.23/viikko2/
+
 ~ Palvelin B: 195.148.20.62 (Replica)
 B: http://195.148.20.62/viikko4/
 
