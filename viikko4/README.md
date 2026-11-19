@@ -30,6 +30,9 @@ Varmuuskopioinnin onnistumiset kirjataan lokitiedostoon.
 ~ Verkkosivut toimivat julkisessa verkossa.
 
 ~ Tietokantareplikointi toimii A:lta B:lle.
+
 ~ Varmuuskopiointi toimii automaattisesti.
+
 ~ Varmuuskopion palautusta testattiin erillisessä hakemistossa.
 ~ Palveluiden toiminta tarkistettiin uudelleenkäynnistyksen jälkee
+
